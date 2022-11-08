@@ -1,14 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <Title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script language="JavaScript" src="main.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <div id="calculator">
+        <h1>SAMUEL CALSIO</h1>
+        <p id="last_operation_history"></p>
+        <p id="box" class="box">0</p>
+        <table id="table">
+            <tr>
+                <td><button class="power" onclick="calculate_percentage()">ON</button></td>
+                <td><button class="clear" onclick="clear_entry()">CE</button></td>
+                <td><button id="divOp" value="/" class="operator" onclick="button_number('/')">÷</button></td>
+                <!-- <td><button onclick="button_clear()">C</button></td>
+                <td><button id="backspace_btn" onclick="backspace_remove()"></button></td> -->
+                <td><button id="multiOp" value="*" class="operator" onclick="button_number('*')">×</button></td>
+            </tr>
+            <!-- <tr>
+                <td><button id="plusOp" value="+" class="operator" onclick="button_number('+')">+</button></td>
+            </tr> -->
+            <tr>
+                <td><button onclick="button_number(7)">7</button></td>
+                <td><button onclick="button_number(8)">8</button></td>
+                <td><button onclick="button_number(9)">9</button></td>
+                <td><button id="subOp" value="-" class="operator" onclick="button_number('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="button_number(4)">4</button></td>
+                <td><button onclick="button_number(5)">5</button></td>
+                <td><button onclick="button_number(6)">6</button></td>
+                <td><button id="plusOp" value="+" class="operator" onclick="button_number('+')">+</button></td>
+                <!-- <td><button id="multiOp" value="*" class="operator" onclick="button_number('*')">×</button></td> -->
+            </tr>
+            <tr>
+                <td><button onclick="button_number(1)">1</button></td>
+                <td><button onclick="button_number(2)">2</button></td>
+                <td><button onclick="button_number(3)">3</button></td>   
+                <td><button id="dot" value="." onclick="button_number('.')">.</button></td>         
+                <!-- <td><button id="divOp" value="/" class="operator" onclick="button_number('/')">÷</button></td> -->
+            </tr>
+            <tr>
+                
+                <td><button onclick="button_number(0)">0</button></td>
+                <td><button id="dot" value="." onclick="button_number('.')">.</button></td>
+                <td colspan="4"><button value="=" class="equal" id="equal_sign" onclick="button_number('=')">=</button></td>
+                <td><button class="off" onclick="plus_minus()">OFF</button></td>
+            </tr>
+        </table>
+    </div>    
 
-    <h1>Hello worlds</h1>
+    <div class="footer">
+        <p><a href="mailto:alexandrosflorides@gmail.com?subject=Calculator Project">Alexandros Florides - alexandrosflorides@gmail.com</a></p>
+    </div>
     
 </body>
 </html>
